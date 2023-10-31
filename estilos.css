@@ -1,0 +1,118 @@
+body{
+  background-color: #FFDF92;
+  border:#9A4D19 ;
+}
+header{
+  background-image:  url(img/logo.jpg);
+  height: 400px;
+  width: 1500px;
+}
+.titulo {
+  color: #6674B3;
+  font-style: century gothic;
+  font-size: 50px;
+  text-align: center;
+}
+.titulo2 {
+  color: #6674B3;
+  font-style: helvetica ;
+  font-size: 70px;
+  text-decoration: underline;
+  text-align: center;
+}
+.subtitulo {
+  color: #FCB393;
+  font-style: century gothic;
+  font-size: 40px;
+  text-align: center;
+}
+.proveedores{
+height: 100px;
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+}
+.nav{
+  border: 1px solid #9A4D19;
+  background-color: #FCB393;
+  height: 60px;
+  width: 1500px;
+  margin: 0px ;
+}
+img {
+    style;
+    height: 150px;
+    width: 150px;
+    margin: 0 Auto;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.logos{
+    style;
+    height: 60px;
+    width: 60px;
+    margin: 0 Auto;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.main  {
+  background-color: white;
+  width: 50%;
+  height: auto;
+}
+main{
+  height: auto;
+  display: flex;
+  flex-direction: row;
+}
+.contenedorvideo{
+  height: auto;
+    width: 800px;
+}
+.video {
+  height: auto;
+    width: 50%;
+    margin-top: 40px;
+    margin-left: 20px;
+}
+.pie {
+  background-color: #9A4D19;
+  font-style: century gothic;
+  font-size: 30px;
+  width: 100%;
+}
+.costado{
+  color: #9A4D19;
+  background-color: #FCB393;
+  width: 50%;
+  height: auto;
+  font-style: century gothic;
+  font-size: 40px;
+  text-align: center;
+}
+.logoflotante{
+  width: 100px;
+  height: 100px;
+  bottom: 30px;
+  position: fixed;
+  right: 40px;
+  background-image: none;
+}
+.borde{
+  border: 1px solid white;
+color: white;
+width: 100%;
+}
+.contenedorpie{
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+p{
+  color: black;
+  font-style: century gothic;
+  font-size: 30px;
+  text-align: center;
+}
