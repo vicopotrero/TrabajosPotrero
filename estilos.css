@@ -211,84 +211,15 @@ ul li {
   color: palevioletred;
   padding: 0px 0px;
 }
-
 .social-media-icon:hover {
   background-color: black;
   color: white;
 }
-
 .social-media-icon i {
   line-height: 90px;
   font-size: 45px;
-  }
-/*
-.logoflotante img{
-  position: relative;
-  left: 0;
-  transition: opacity 1.5s ease-in-out;
-}
-.logoflotante:hover img:first-child{
-  opacity: 0;
-}
-.logoflotante:hover img:last-child{
-  opacity: 1;
-}
-.logoflotante img {
-position: absolute;
-transition: opocity 1.5s ease-in-out;
-opacity: 0;
-  }
-.logoflotante img:last-child{
-    opacity: 1;
 }
 
-.logoflotante {
-  position: relative;
-  width: 200px; 
-  height: 200px; 
-  overflow: hidden;
-}
-
-.imagen {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 1;
-  transition: opacity 1.5s ease-in-out;
-}
-
-.imagen.hover {
-  opacity: 0;
-}
-.imagen-container:hover .imagen.hover {
-  opacity: 1;
-.logoflotante {
-  position: fixed;
-  bottom: 20px; 
-  right: 20px;
-}
-.imagen {
-  position: absolute;
-  width: 100px;
-  height: 100px;
-  opacity: 1;
-  transition: opacity 1.5s ease-in-out;
-}
-
-.imagen2 {
-  opacity: 0;
-}
-.logoflotante:hover .imagen1 {
-  color: palevioletred;
-  opacity: 0;
-}
-.logoflotante:hover .imagen2 {
-  opacity: 1;
-  color: green;
-}
-*/
 .redes { 
   flex-wrap: nowrap;
   width: 100%;
@@ -308,6 +239,21 @@ opacity: 0;
   width: 100%;
   height: auto;
   text-align: center;
+}
+.backinicio{
+  background-color: #acb6e0;
+  font-family: "Annie Use Your Telescope";
+  text-align: center;  
+  height: 10%;
+  width: 15%;
+  position: absolute;
+}
+.backinicio:hover{
+  background-color: white;
+  text-align: center;
+  align-items: center;
+  height: 9%;
+  width: 14%;
 }
 .contacto p{
   font-size: 30px;
