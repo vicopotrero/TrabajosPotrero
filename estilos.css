@@ -38,6 +38,7 @@ a{
 .logo{
     width: 150px;
     height: 150px;
+    padding: 20px;
 }
 .titulo {
   display: flex;
@@ -52,10 +53,12 @@ a{
   font-family: "Satisfy";
   font-size: 40px;
   text-align: center;
+  padding: 20px;
 }
 
 /* navegador  */
 .contenedornav{
+  padding: 20px;
   border: 1px solid #9A4D19;
   background-color: #FCB393;
   height: auto;
@@ -90,7 +93,7 @@ a{
   }
 
   .prov a p {
-    font-family: "Agbalumo";
+    font-family: "Satisfy";
     font-size: 25px;
     color: #9A4D19;
     text-align: center;
@@ -108,7 +111,12 @@ a{
     justify-content: space-between;
     justify-content: center;
 }
-
+p{
+  font-family: "Annie Use Your Telescope";
+  font-size: 20px;
+  padding: 20px;
+  color: #000;
+}
 /* main  */
 section{
   width: 98%;
@@ -135,11 +143,13 @@ main{
   justify-content: space-evenly;
 }
 ol li {
+  font-family: "Annie Use Your Telescope";
   color: black;
   font-size: 30px;
   text-align: center;
 }
 ul li {
+  font-family: "Annie Use Your Telescope";
   color: black;
   text-align: center;
   font-size: 30px;
@@ -178,6 +188,20 @@ ul li {
 }
 .elementocelu{
   display: none;
+}
+
+/*cards*/
+.titulocard{
+  color: white;
+  font-family: "Satisfy";
+  font-size: 40px;
+  text-align: center;
+  padding: 20px;
+}
+.cardtext{
+  text-align: center;
+  color: #FFDF92;
+  font-size: 25px;
 }
 
 /* pie de pagina  */
