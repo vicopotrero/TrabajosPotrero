@@ -8,19 +8,23 @@ body{
   border:#9A4D19 ;
   width: 100%;
 }
+a{
+  text-decoration: none;
+}
 
 /* encabezado  */
 .contenedorheader{
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   width: 100%;
   height: auto;
   background-color: #d1986b;
   align-items: center;
+  text-align: center;
 }
 .contenedorheader div{
-  width: 30%;
+  width: 350px;
   align-items: center;
 }
 .contenedorheader .redes img {
@@ -61,13 +65,16 @@ body{
   align-items: center;
   justify-content: space-around;
   flex-direction: row;
+  flex-wrap: wrap;
   box-sizing: border-box;
   list-style: none;
 }
 .prov {
-    width: 25%;
+    width: 350px;
     display: flex;
+    justify-content: center;
     flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
     color: #9A4D19;
     position: relative;
@@ -86,6 +93,7 @@ body{
     font-family: "Agbalumo";
     font-size: 25px;
     color: #9A4D19;
+    text-align: center;
   }
   
   .prov:hover {
@@ -107,13 +115,14 @@ section{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 main{
   height: auto;
   display: flex;
   background-color: white;
   height: auto;
-  width: 65%;
+  width: 950px;
 }
 .img {
   background-color: #d1986b;
@@ -143,7 +152,7 @@ ul li {
 /* aside  */
 .costado{
   background-color: #FCB393;
-  width: 30%;
+  width: 350px;
   height: auto;
 }
 .contenedorvideo{
@@ -167,25 +176,22 @@ ul li {
   text-align: center;
   color: #9A4D19;
 }
+.elementocelu{
+  display: none;
+}
 
 /* pie de pagina  */
 .contenedorpie{
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   width: 100%;
+  height: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-}
-.pie {
   background-color: #9A4D19;
   font-style: century gothic;
   font-size: 30px;
-  width: 100%;
-  height: auto;
-  justify-content: center;
-  display: flex;
-  align-items: center;
 }
 .logoflotante{
   color: green;
@@ -219,14 +225,34 @@ ul li {
   line-height: 90px;
   font-size: 45px;
 }
-
+.mapa{
+  width: 450px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.pie .m{
+  width: 300px; 
+  height: 187px;
+  justify-content: center;
+  align-items: center;
+}
+.subpie{
+  width: 450px;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+}
 .redes { 
-  flex-wrap: nowrap;
-  width: 100%;
+  flex-wrap: wrap;
+  width: 450px;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+  padding: 20px;
 }
 .redes :hover{
    width: 12vh;
@@ -244,17 +270,69 @@ ul li {
   background-color: #acb6e0;
   font-family: "Annie Use Your Telescope";
   text-align: center;  
-  height: 10%;
-  width: 15%;
+  height: auto;
+  width: 100%;
   position: absolute;
 }
 .backinicio:hover{
   background-color: white;
   text-align: center;
   align-items: center;
-  height: 9%;
-  width: 14%;
 }
 .contacto p{
   font-size: 30px;
+}
+@media screen and (max-width:800px) {
+  section{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  main{
+    width: 780px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .costado {
+    width: 780px;
+    background-color: #FCB393 380px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .pie {
+    width: 790px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width:400px) {
+  section{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  main{
+    width: 380px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .costado {
+    width: 380px;
+    background-color: #FCB393 380px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .pie {
+    width: 390px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .subpie .subtitulo{
+    width: 350px;
+    font-size: 25px;
+  }
+  .elementocelu{
+    display: block;
+  }
 }
