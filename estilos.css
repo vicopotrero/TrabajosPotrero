@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Annie+Use+Your+Telescope&family=Satisfy&display=swap');
 
 html{
-  width: 99%;
+  width: 100%;
 }
 body{
   background-color: #FFDF92;
@@ -44,9 +44,11 @@ a{
   display: flex;
   flex-direction: row;
   color: #6674B3;
-  font-size: 30px;
+  font-size: 50px;
   text-align: center;
-  font-family: "Annie Use Your Telescope";
+  /*font-family: "Annie Use Your Telescope"; */ 
+  font-family: 'Montserrat';
+
 }
 .subtitulo {
   color: #FCB393;
@@ -73,7 +75,7 @@ a{
   list-style: none;
 }
 .prov {
-    width: 350px;
+    width: 250px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -98,12 +100,33 @@ a{
     color: #9A4D19;
     text-align: center;
   }
-  
   .prov:hover {
     font-size: 30px;
     background-color: #6674B3;
     text-align: center;
   }
+.botonlm{
+  display: flex;
+  flex-direction: column;
+  font-family: "Satisfy";
+  font-size: 40px;
+  background-color: #6674B3;
+  font-size: 25px;
+  color:#acb6e0;
+}
+.botonvn{
+  display: flex;
+  flex-direction: column;
+  font-family: "Satisfy";
+  font-size: 40px;
+  background-color: #6674B3;
+  font-size: 25px;
+  color:#acb6e0;
+  cursor: pointer;
+}
+button:not(:disabled) {
+  cursor: pointer;
+}
 .logos{
     height: 60px;
     width: 60px;
@@ -111,12 +134,7 @@ a{
     justify-content: space-between;
     justify-content: center;
 }
-p{
-  font-family: "Annie Use Your Telescope";
-  font-size: 20px;
-  padding: 20px;
-  color: #000;
-}
+
 /* main  */
 section{
   width: 98%;
@@ -124,6 +142,12 @@ section{
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
+}
+section p{
+  font-family: "Annie Use Your Telescope";
+  font-size: 20px;
+  padding: 20px;
+  color: #000;
 }
 main{
   height: auto;
@@ -189,20 +213,302 @@ ul li {
 .elementocelu{
   display: none;
 }
+/* inicia version nocturna */
+.darkvn{ /*igual como si fuera el body*/
+background-color: #353333;
+color:#fff;
+} 
+.darkvn .contenedorheader{
+  background-color: #cedce7;
+}
+.darkvn .contenedornav{
+  background-color: #cedce7;
+}
+.darkvn .main{
+  background-color: #d1986b;
+}
+.darkvn .contenedorpie{
+  background-color: darkslategrey;
+}
+.darkvn .costado{
+  background-color: #d1986b;
+}
+
 
 /*cards*/
-.titulocard{
-  color: white;
-  font-family: "Satisfy";
-  font-size: 40px;
-  text-align: center;
-  padding: 20px;
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 80rem;
 }
-.cardtext{
-  text-align: center;
-  color: #FFDF92;
-  font-size: 25px;
+
+.cols {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
+
+.col {
+  width: calc(25% - 2rem);
+  margin: 1rem;
+  cursor: pointer;
+
+}
+
+.container {
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+}
+
+.front,
+.back {
+  background-size: cover;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  background-position: center;
+  -webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  -o-transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  text-align: center;
+  min-height: 280px;
+  box-shadow: 0 0 10px solid blue;
+  height: auto;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.back {
+  background: #cedce7;
+  background: -webkit-linear-gradient(45deg, #cedce7 0%, #596a72 100%);
+  background: -o-linear-gradient(45deg, #cedce7 0%, #596a72 100%);
+  background: linear-gradient(45deg, #cedce7 0%, #596a72 100%);
+}
+.back .inner a {
+  color:#9A4D19;
+  font-family: 'Montserrat';
+  font-weight: 300;
+
+}
+.front:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  content: '';
+  display: block;
+  opacity: .6;
+  background-color: #000;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 10px;
+}
+
+.container:hover .front,
+.container:hover .back {
+  -webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  -o-transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+}
+
+.back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.inner {
+  -webkit-transform: translateY(-50%) translateZ(60px) scale(0.94);
+  transform: translateY(-50%) translateZ(60px) scale(0.94);
+  top: 50%;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  padding: 2rem;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: 1px solid transparent;
+  -webkit-perspective: inherit;
+  perspective: inherit;
+  z-index: 2;
+  font-family: 'Montserrat';
+}
+
+.container .back {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.container .front {
+  -webkit-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.container:hover .back {
+  -webkit-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.container:hover .front {
+  -webkit-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.front .inner p {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  position: relative;
+  font-family: 'Montserrat';
+}
+
+.front .inner p:after {
+  content: '';
+  width: 4rem;
+  height: 2px;
+  position: absolute;
+  background: #C6D4DF;
+  display: block;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  bottom: -.75rem;
+}
+
+.front .inner a {
+  color: rgba(234, 162, 191, 0.7);
+  font-family: 'Montserrat';
+  font-weight: 300;
+
+}
+
+@media screen and (max-width: 64rem) {
+  .col {
+      width: calc(33.333333% - 2rem);
+  }
+}
+
+@media screen and (max-width: 48rem) {
+  .col {
+      width: calc(50% - 2rem);
+  }
+}
+
+@media screen and (max-width: 32rem) {
+  .col {
+      width: 100%;
+      margin: 0 0 2rem 0;
+  }
+}
+.botellas{
+  background-image: url(img/fondo.jpeg) ;
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+.botellas img{
+  align-items: center;
+}
+.botellas .backinicio{
+  background-color: #acb6e0;
+  font-family: "Annie Use Your Telescope";
+  text-align: center;  
+  height: auto;
+  width: 100%;
+}
+.botellas .backinicio:hover{
+  background-color: white;
+  text-align: center;
+  align-items: center;
+}
+.cocina{
+  background-image: url(img/fondo.jpeg) ;
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+.cocina img{
+  align-items: center;
+}
+.cocina .backinicio{
+  background-color: #acb6e0;
+  font-family: "Annie Use Your Telescope";
+  text-align: center;  
+  height: auto;
+  width: 100%;
+}
+.cocina .backinicio:hover{
+  background-color: white;
+  text-align: center;
+  align-items: center;
+}
+.verano{
+  background-image: url(img/fondo.jpeg) ;
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+.verano img{
+  align-items: center;
+}
+.verano .backinicio{
+  background-color: #acb6e0;
+  font-family: "Annie Use Your Telescope";
+  text-align: center;  
+  height: auto;
+  width: 100%;
+}
+.verano .backinicio:hover{
+  background-color: white;
+  text-align: center;
+  align-items: center;
+}
+.vasos{
+  background-image: url(img/fondo.jpeg) ;
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+.vasos img{
+  align-items: center;
+}
+.vasos .backinicio{
+  background-color: #acb6e0;
+  font-family: "Annie Use Your Telescope";
+  text-align: center;  
+  height: auto;
+  width: 100%;
+}
+.vasos .backinicio:hover{
+  background-color: white;
+  text-align: center;
+  align-items: center;
+}
+
 
 /* pie de pagina  */
 .contenedorpie{
@@ -282,43 +588,62 @@ ul li {
    width: 12vh;
    height: 12vb;
 }
+.botoncreador{
+  display: flex;
+  font-family: "Satisfy";
+  font-size: 40px;
+  background-color: #6674B3;
+  font-size: 25px;
+  color:#acb6e0;
+}
 
 /* contacto  */
-.contacto  {
+.pagcontacto {
   background-image: url(img/fondo.jpeg) ;
   width: 100%;
   height: auto;
   text-align: center;
 }
-.backinicio{
+.backinicio a p{
   background-color: #acb6e0;
   font-family: "Annie Use Your Telescope";
   text-align: center;  
   height: auto;
   width: 100%;
-  position: absolute;
+  font-size: 30px;
 }
-.backinicio:hover{
+.backinicio a p:hover{
   background-color: white;
   text-align: center;
   align-items: center;
 }
-.contacto p{
-  font-size: 30px;
+.contacto{
+  background-color: #FFDF92;
+background-image: url(img/fondo.jpeg);
+background-size: 100%;
+background-position: center;
+  width: 100%;
+  height: auto;
+  text-align: center;
 }
-@media screen and (max-width:800px) {
+.pagcontacto p{
+  font-size: 30px;
+  text-align: center;
+}
+
+@media screen and (max-width:768px) {
   section{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
   }
   main{
-    width: 780px;
+    width: 740px;
     display: flex;
     flex-wrap: wrap;
   }
   .costado {
-    width: 780px;
+    width: 740px;
     background-color: #FCB393 380px;
     display: flex;
     flex-wrap: wrap;
